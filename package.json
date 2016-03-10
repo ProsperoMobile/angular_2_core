@@ -2,7 +2,6 @@
   "name": "angular2-quickstart",
   "version": "1.0.0",
   "scripts": {
-    "prepare": "concurrently \"npm run typings\" \"npm run postinstall\" \"npm run webpack\" ",
     "devserver": "concurrently \"webpack-dev-server --inline --progress --colors\" \"open http://localhost:8080\"",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
