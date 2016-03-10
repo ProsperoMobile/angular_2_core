@@ -2,17 +2,16 @@
   "name": "angular2-quickstart",
   "version": "1.0.0",
   "scripts": {
-    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "prepare": "concurrently \"npm run typings\" \"npm run postinstall\" \"npm run webpack\" ",
+    "devserver": "concurrently \"webpack-dev-server --inline --progress --colors\" \"open http://localhost:8080\"",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
-    "lite": "lite-server",
     "typings": "typings",
     "postinstall": "typings install"
   },
   "license": "ISC",
   "dependencies": {
     "angular2": "2.0.0-beta.8",
-    "systemjs": "0.19.22",
     "es6-promise": "^3.0.2",
     "es6-shim": "^0.33.3",
     "reflect-metadata": "0.1.2",
